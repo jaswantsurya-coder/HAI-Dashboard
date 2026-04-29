@@ -1,26 +1,25 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tw-animate-css";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-color-destructive-foreground: var(----color-destructive-foreground);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --destructive-foreground: oklch(1 0 0);
+  --background: oklch(0.99 0.005 85);
+  --foreground: oklch(0.15 0.01 50);
+  --primary: oklch(0.15 0.01 50);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.96 0.005 85);
+  --secondary-foreground: oklch(0.3 0.01 50);
+  --muted: oklch(0.96 0.005 85);
+  --muted-foreground: oklch(0.55 0.01 50);
+  --border: oklch(0.9 0.005 85);
+  --ring: oklch(0.15 0.01 50);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.dark {
+  --destructive-foreground: oklch(1 0 0);
 }
