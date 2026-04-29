@@ -101,7 +101,7 @@ export default function DashboardPage() {
         </div>
 
         <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.5 }}
-          className="flex items-center gap-4 px-7 h-16 flex-shrink-0"
+          className="flex items-center gap-4 px-7 h-16 flex-shrink-0 relative z-50"
           style={{ background: "rgba(255,255,255,0.5)", borderBottom: "1px solid rgba(255,255,255,0.88)", backdropFilter: "blur(24px)" }}>
           <div className="flex items-center gap-3 pl-10 lg:pl-0">
             <span className="text-lg font-medium" style={{ fontFamily: "Georgia,serif", color: "#1a1714" }}>Overview</span>
