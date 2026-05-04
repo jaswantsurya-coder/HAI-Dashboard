@@ -2,6 +2,7 @@
 import { motion } from "motion/react";
 import { Users, TrendingUp, TrendingDown, Activity, ArrowUpRight, BarChart3, Globe } from "lucide-react";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Legend } from "recharts";
+import { cn } from "@/lib/utils";
 
 const performanceData = [
   { name: "Jan", hai: 4000, compA: 2400, compB: 2400 },
