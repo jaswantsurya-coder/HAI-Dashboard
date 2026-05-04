@@ -2,7 +2,6 @@
 import { motion } from "motion/react";
 import { Users, TrendingUp, TrendingDown, Activity, ArrowUpRight, BarChart3, Globe } from "lucide-react";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Legend } from "recharts";
-import { cn } from "@/lib/utils";
 
 const performanceData = [
   { name: "Jan", hai: 4000, compA: 2400, compB: 2400 },
@@ -152,7 +151,7 @@ export default function CompetitorsPage() {
                 </div>
                 <div className="text-right">
                   <p className="font-bold text-sm">{comp.marketShare}%</p>
-                  <p className={cn("text-xs font-bold mt-0.5", comp.trend === "up" ? "text-green-600" : "text-rose-600")}>
+                  <p className={`text-xs font-bold mt-0.5 ${comp.trend === "up" ? "text-green-600" : "text-rose-600"}`}>
                     {comp.growth}
                   </p>
                 </div>
